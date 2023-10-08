@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELODIS MUSIC</title>
+    <style>
+         /* CSS untuk container profil dosen */
+         .profile-container1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Mengatur horizontal centering */
+            align-items: center; /* Mengatur vertical centering */
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            max-width: 300px;
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile-img1 {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+        }
+
+        /* CSS untuk Navigasi Bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li.navitem {
+            float: left;
+        }
+
+        li.navitem a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.navitem a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* CSS untuk Profil */
+        .profile-container {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px;
+        justify-content: space-between; /* Pindahkan elemen ke sisi kanan */
+        background-image: url('th.jpg'); /* Menambahkan gambar sebagai background */
+        background-size: cover; /* Agar gambar background mencakup seluruh area */
+        background-position: center; /* Pusatkan gambar background */
+    }
+
+    .profile-info {
+        text-align: left;
+        color: white; /* Mengubah warna teks menjadi putih agar terlihat di atas gambar */
+    }
+
+    /* CSS untuk Teks pada Background Profil */
+    .profile-text {
+        background-color: rgba(0, 0, 0, 0.5); /* Tambahkan latar belakang semi-transparan untuk teks */
+        padding: 10px; /* Berikan padding agar teks terlihat lebih baik */
+        border-radius: 5px; /* Agar sudut teks terlihat lebih lembut */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    /* CSS untuk mengatur profil dosen berada di tengah */
+    .profiles-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Mengatur horizontal centering */
+        flex-wrap: wrap; /* Memungkinkan baris berikutnya jika kontainer tidak muat dalam lebar layar */
+        margin-top: 20px; /* Margin atas untuk memisahkan dari profil Anda */
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    .footer-social a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .footer-contact {
+        margin-top: 20px;
+    }
+
+    .footer-contact p {
+        margin: 5px 0;
+    }
+
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigasi Bar -->
+    <ul class="navbar">
+        <li class="navitem"><a href="index.html">Home</a></li>
+        <li class="navitem"><a href="beranda.html">Profil</a></li>
+        <li class="navitem"><a href="tentang.html">Tentang Kami</a></li>
+        <li class="navitem"><a href="Dosen.html">Stok Barang</a></li>
+        <li class="navitem"><a href="kontak.html">Kontak</a></li>
+        <li class="navitem"><a href="pendaftaran.html">Pendaftaran</a></li>
+    </ul>
+<div id="beranda">
+    <!-- Profil Saya -->
+    <div class="profile-container">
+        <div class="profile-info">
+            <div class="profile-text">
+                <h1>PROFIL MELODIS</h1>
+                <p>MELODIS merupakan toko alat musik professional & pro audio online terlengkap di Indonesia. Alat musik yang kami sediakan diantaranya Gitar, Bass, Keyboard, Drum Microphone, Pedal Gitar & Bass, Ampli Gitar & Bass, Power Amplifier, Cymbal, dll. Kami juga menyediakan Speaker & Sound System untuk kebutuhan audio dan alat recording Anda. Kami menjamin keaslian semua produk yang kami jual serta bergaransi resmi, karena kami sekaligus merupakan Authorized Distributor dari brand produk yang kami jual.</p>
+                <p>Untuk Anda yang berada di DKI Jakarta, Yogyakarta, Bali, Anda juga bisa datang langsung ke toko musik kami untuk memilih dan mencoba secara langsung produk yang kami jual.</p>
+                <p>Kami juga selalu memberikan penawaran & promo-promo menarik seperti paket sound system dengan harga murah tentunya hanya untuk Anda. Lengkapi kebutuhan alat musik & audio Anda hanya di melodis!!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-social">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-contact">
+        <p>Alamat: Jl. Karangdowo No. 9, Kota pekalongan</p>
+        <p>Email: https://itsnupekalongan.ac.id/</p>
+        <p>Telepon: 0285-7831614</p>
+    </div>
+</footer>
+</div>
+<!-- Konten Halaman Anda akan ditambahkan di sini -->
+</body>
+</html>

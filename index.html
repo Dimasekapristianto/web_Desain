@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELODIS MUSIC</title>
+    <style>
+        /* CSS untuk container profil dosen */
+        .profile-container1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Mengatur horizontal centering */
+            align-items: center; /* Mengatur vertical centering */
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            max-width: 300px;
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .profile-img1 {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+        }
+
+        /* CSS untuk Navigasi Bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li.navitem {
+            float: left;
+        }
+
+        li.navitem a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.navitem a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* CSS untuk Profil */
+        .profile-container {
+            display: flex;
+            align-items: center;
+            background-image: url('Old.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px;
+            height: 300px;
+            justify-content: center; /* Pindahkan elemen ke sisi kanan */
+        }
+
+        .profile-info {
+            text-align: left;
+            color: #fff;
+        }
+
+        /* CSS untuk Teks pada Background Profil */
+        .profile-text-container {
+            background-color: rgba(0, 0, 0, 0.5); /* Tambahkan latar belakang semi-transparan untuk teks */
+            padding: 100px; /* Berikan padding agar teks terlihat lebih baik */
+            border-radius: 5px; /* Agar sudut teks terlihat lebih lembut */
+            max-width: 800px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        /* CSS untuk Tautan Instagram */
+        .instagram-link {
+            text-align: center; /* Pindahkan tautan ke kiri */
+            margin-top: 20px;
+            margin-left: 20px; /* Berikan margin kiri */
+        }
+
+        .instagram-link a {
+            display: inline-block;
+            background-color: #e4405f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto 10px;
+        }
+
+        /* CSS untuk mengatur profil dosen berada di tengah */
+        .profiles-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Mengatur horizontal centering */
+            flex-wrap: wrap; /* Memungkinkan baris berikutnya jika kontainer tidak muat dalam lebar layar */
+            margin-top: 20px; /* Margin atas untuk memisahkan dari profil Anda */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-social {
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+
+        .footer-contact {
+            margin-top: 20px;
+        }
+
+        .footer-contact p {
+            margin: 5px 0;
+        }
+
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi Bar -->
+    <ul class="navbar">
+        <li class="navitem"><a href="index.html">Home</a></li>
+        <li class="navitem"><a href="beranda.html">Profil</a></li>
+        <li class="navitem"><a href="tentang.html">Tentang Kami</a></li>
+        <li class="navitem"><a href="Dosen.html">Stok Barang</a></li>
+        <li class="navitem"><a href="kontak.html">Kontak</a></li>
+        <li class="navitem"><a href="pendaftaran.html">Pendaftaran</a></li>
+    </ul>
+    <div id="beranda">
+        <!-- Profil Saya -->
+        <div class="profile-container">
+            <div class="profile-info">
+                <div class="profile-text-container">
+                    <h1>SELAMAT DATANG</h1>
+                    
+                    <p style="text-align: center;">MELODIS merupakan toko alat musik professional & pro audio online terlengkap di Indonesia. Alat musik yang kami sediakan diantaranya Gitar, Bass, Keyboard, Drum Microphone, Pedal Gitar & Bass, Ampli Gitar & Bass, Power Amplifier, Cymbal, dll</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tautan ke Instagram -->
+    <div class="instagram-link">
+        <a href="https://www.instagram.com/dimas.pristiant_/" target="_blank">Hubungi Saya</a>
+    </div>
+    <div id="tentang">
+        <div class="container">
+            <h1>Visi dan Misi</h1>
+            <h2>Visi:</h2>
+            <p>
+                Menjadi toko musik terkemuka yang memberikan pengalaman belanja musik yang luar biasa dan menyediakan alat musik berkualitas serta layanan yang unggul kepada pelanggan kami.
+            </p>
+
+            <h2>Misi:</h2>
+            <ol>
+                <li>
+                    Memberikan Pilihan Terbaik: Kami berkomitmen untuk menyediakan beragam alat musik berkualitas tinggi, rekaman, aksesori, dan perangkat lunak musik untuk memenuhi kebutuhan semua jenis musisi, dari pemula hingga profesional.
+                </li>
+                <li>
+                    Pelayanan Pelanggan yang Luar Biasa: Kami akan selalu memberikan pelayanan pelanggan yang ramah, informatif, dan responsif. Kami mendengarkan kebutuhan pelanggan dan memberikan solusi terbaik.
+                </li>
+                <li>
+                    Edukasi Musisi: Kami akan memberikan sumber daya dan dukungan yang diperlukan untuk membantu musisi dalam pengembangan keterampilan mereka. Ini melibatkan kelas, tutorial, dan acara komunitas yang mendukung pertumbuhan musisi.
+                </li>
+                <li>
+                    Kualitas Produk yang Tak Tertandingi: Kami hanya menjual produk-produk berkualitas tinggi yang berasal dari produsen terkemuka di industri musik. Kami melakukan uji kualitas dan pemeliharaan yang ketat untuk memastikan barang-barang yang kami jual selalu dalam kondisi optimal.
+                </li>
+                <li>
+                    Inovasi Teknologi: Kami selalu mengikuti perkembangan teknologi dalam industri musik. Kami menyediakan perangkat lunak dan perangkat keras musik terbaru untuk memastikan musisi memiliki akses ke alat-alat terbaru yang memudahkan mereka dalam menciptakan musik.
+                </li>
+                <li>
+                    Kemitraan yang Kuat: Kami akan membangun kemitraan yang kokoh dengan produsen, penyanyi, dan organisasi musik untuk memastikan kami selalu memiliki akses ke produk-produk dan pengetahuan terbaru dalam industri ini.
+                </li>
+                <li>
+                    Komunitas Musik yang Kuat: Kami akan mendukung komunitas musik lokal dengan menjadi tempat pertemuan dan acara musik. Kami akan berkontribusi pada pertumbuhan budaya musik di wilayah kami.
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div id="dosen">
+        <h1>BARANG</h1>
+
+        <!-- Profil Dosen 1 -->
+        <div class="profile-container1">
+            <img class="profile-img1" src="preview_1.jpg" alt="Foto Dosen 1">
+            <h2>Guitar telecaster</h2>
+            <p>Rp.4.750.000</p>
+        </div>
+
+        <!-- Profil Dosen 2 -->
+        <div class="profile-container1">
+            <img class="profile-img1" src="preview 4.jpg" alt="Foto Dosen 2">
+            <h2>jazz bass fender</h2>
+            <p>Rp.6.450.000</p>
+        </div>
+
+        <!-- Profil Dosen 3 -->
+        <div class="profile-container1">
+            <img class="profile-img1" src="c.jpg" alt="Foto Dosen 3">
+            <h2>Keyboard</h2>
+            <p>Rp.3.000.000</p>
+        </div>
+
+        <!-- Profil Dosen 4 -->
+        <div class="profile-container1">
+            <img class="profile-img1" src="preview.jpg" alt="Foto Dosen 4">
+            <h2>Drum Set Tama</h2>
+            <p>Rp.12.500.000</p>
+        </div>
+    </div>
+    <div id="kontak">
+        <footer>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Alamat: Jl. Karangdowo No. 9, Kota pekalongan</p>
+                <p>Email: https://melodis.ac.id/</p>
+                <p>Telepon: 0285-7831614</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Konten Halaman Anda akan ditambahkan di sini -->
+</body>
+</html>
