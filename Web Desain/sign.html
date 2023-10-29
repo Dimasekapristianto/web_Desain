@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .icon-text-container {
+          display: flex;
+          align-items: center;
+        }
+      
+        .icon-text-container svg {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+      
+        .icon-text-container a {
+          color: #080700;
+          text-decoration: none;
+        }
+        .navbar-nav {
+          color: black;
+        }
+        .navbar-nav :hover {
+          color: #b38d04;
+        }
+          /* CSS kustom untuk mengatur border */
+    .custom-border {
+        border: 1px solid #e0e0e0;
+        width: 40%; /* Panjang border sekitar 40% */
+        border-radius: 5px;
+    }
+    .custom-button {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .custom-button.save {
+        background-color: gray;
+        color: white;
+    }
+
+    .custom-button.save:hover {
+        background-color: green;
+    }
+
+    .custom-button.cancel {
+        background-color: gray;
+        color: white;
+    }
+
+    .custom-button.cancel:hover {
+        background-color: lightgray;
+    }
+    .container-mt-5 {
+        width: 10%;
+    }
+    .input-grup {
+        width: 50%;
+    }
+      </style>
+      
+     
+  </head>
+  <body>
+  
+      <div class="row px-5 py-2" style="color: black;">
+        <div class="col-md-4">
+          <div class="icon-text-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g fill="none" stroke="#745b01" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1l1-4Z"/>
+              </g>
+            </svg>
+            <a href="#">Kunjungi Blog</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-text-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#745b01" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c-.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.20-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.10c.48-.07 1.47-.60 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"/>
+            </svg>
+            <a href="#">Whatsapp +6285782947553</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-text-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#745b01" d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4s-4 1.794-4 4s1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2s-2-.897-2-2s.897-2 2-2z"/>
+              <path fill="#745b01" d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005c.021 4.438-4.388 8.423-6 9.73c-1.611-1.308-6.021-5.294-6-9.735c0-3.309 2.691-6 6-6z"/>
+            </svg>
+            <a href="#">Cari Lokasi</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!--Navbar-->
+      <nav class="navbar fixed-bottom">
+        <div class="container-fluid px-4 py-4 d-flex justify-content-end">
+          <a class="navbar-nav" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 36 36"><path fill="#745b01" d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2Zm8 15.57a1.43 1.43 0 0 1-2 0L19.4 13v14.14a1.4 1.4 0 0 1-2.8 0v-14l-4.43 4.43a1.4 1.4 0 0 1-2-2l7.91-7.87L26 15.59a1.4 1.4 0 0 1 0 1.98Z" class="clr-i-solid clr-i-solid-path-1"/><path fill="none" d="M0 0h36v36H0z"/></svg></a>
+        </div>
+      </nav>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+       <div class="container">
+          <a class="navbar-brand px-5" href="#"><h3 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><strong>MELODIS</strong></h3></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto px-3" style="color: #080700;">
+              <a class="nav-link px-3" aria-current="page" href="index.html"><strong>Home</strong></a>
+              <a class="nav-link px-3" aria-current="page" href="About.html"><strong>About</strong></a>
+              <a class="nav-link px-3" aria-current="page" href="product.html"><strong>Product</strong></a>
+              <a class="nav-link px-3" aria-current="page" href="contact.html"><strong>Contact</strong></a>
+            </div>
+            <button class="bg-danger bc-light" style="border-radius: 5px;">
+              <a class="nav-link px-3 " aria-current="page" href="sign.html"><strong style="color: #f9f6f6;">Login</strong></a>
+            </button>
+          </div>
+        </div>
+      </nav>
+        <!--form-->
+        <body>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="input-group col-md-2 ms-auto ">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="small"
+                            style="opacity: 0.5; border: 1px solid #e0e0e0; border-radius: 2px ; display: inline-block; margin-right: 10px; height: 52px;;"
+                            aria-label="Recipient's username"
+                            aria-describedby="basic-addon2"
+                        />
+                    </div>
+                    <div class="d-block">
+                        <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                    </div>
+                    <div class="input-group ">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Half Width"
+                            style="opacity: 0.5; border: 1px solid #e0e0e0; border-radius: 2px ; display: inline-block; margin-right: 10px;  height: 52px;;"
+                            aria-label="Recipient's username"
+                            aria-describedby="basic-addon2"
+                        />
+                        <div class="text-right">
+                            <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="input-group col-md-2 ms-auto">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="small"
+                            style="opacity: 0.5; border: 1px solid #e0e0e0; border-radius: 2px; height: 52px; "
+                            aria-label="Recipient's username"
+                            aria-describedby="basic-addon2"
+                        />
+                    </div>
+                    <div class="d-block">
+                        <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                    </div>
+                    <div class="container mt-2">
+                        <div class="row">
+                            <div class="input-group col-md-2 ms-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" style="border: 0px solid #e0e0e0; border-radius: 2px; background-color: #e0e0e0; width: 160rch;">
+                                        
+                                            
+                                            <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Input Variation "
+                                            style="opacity: 0.5; border: none; background-color: transparent;"
+                                            aria-label="Recipient's username"
+                                            aria-describedby="basic-addon2"
+                                        />
+                                    </span>
+                                </div>
+    
+                            </div>
+                            <div class="d-block">
+                                <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                            </div>
+                        </div>
+                    </div>
+                           
+                                    <div class="container mt-2">
+                                        <div class="row">
+                                            <div class="input-group col-md-2 ms-auto">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" style="border: 0px solid #e0e0e0; border-radius: 2px; background-color: #e0e0e0; width: 160rch;">
+                                                        
+                                                            <i class="fas fa-envelope"></i>
+                                                            <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder="Input Variation "
+                                                            style="opacity: 0.5; border: none; background-color: transparent;"
+                                                            aria-label="Recipient's username"
+                                                            aria-describedby="basic-addon2"
+                                                        />
+                                                    </span>
+                                                </div>
+        
+                                            </div>
+                                            <div class="d-block">
+                                                <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container mt-2">
+                                        <div class="row">
+                                            <div class="input-group col-md-2 ms-auto">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" style="border: 1px solid #e0e0e0; border-radius: 2px; background-color: transparent; width: 160rch;">
+                                                        
+                                                            <i class="fas fa-envelope"></i>
+                                                            <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder="Input Variation "
+                                                            style="opacity: 0.5; border: none; background-color: transparent;"
+                                                            aria-label="Recipient's username"
+                                                            aria-describedby="basic-addon2"
+                                                        />
+                                                    </span>
+                                                </div>
+        
+                                            </div>
+                                            <div class="d-block">
+                                                <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="container mt-3">
+                                        <div class="row">
+                                            <div class="input-group col-md-2 ms-auto ">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    placeholder="Disabled input here..."
+                                                    style="opacity: 0.5; border: 1px solid #e0e0e0; border-radius: 2px ; display: inline-block; margin-right: 10px; height: 52px;;"
+                                                    aria-label="Recipient's username"
+                                                    aria-describedby="basic-addon2"
+                                                />
+                                            </div>
+                                            <div class="d-block">
+                                                <p style="opacity: 0.5; font-style: italic">Some hint here</p>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                              </div>
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                                                <input type="text" class="form-control" placeholder="Calendar">
+                                
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Price" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2">.00</span>
+                                              </div>
+                                             
+                                              <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Waktu" style="border-right: none; text-align: left;">
+                                                <span class="input-group-text" style="border-left: none; background: transparent; padding-left: 5px;">
+                                                    <i class="fas fa-clock"></i>
+                                                </span>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                  <option selected>Choice 1</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
+                                              </div>
+                                              <div class="input-group mb-3">
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                  <option selected>Choice 1</option>
+                                                  <option value="1">One</option>
+                                                  <option value="2">Two</option>
+                                                  <option value="3">Three</option>
+                                                </select>
+                                              </div>
+                                              <div class="container mt-2">
+                                            
+                                                <div class="input-group mb-3 custom-border"> <!-- Gunakan class custom-border -->
+                                                    <select class="form-select" id="inputGroupSelect01">
+                                                        <option selected>Choice 1</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="container mt-3">
+                                                
+                                                <div class="input-group mb-3">
+                                                    <select class="form-select" multiple>
+                                                        <option selected>Option 1</option>
+                                                        <option value="1">Option 2</option>
+                                                        <option value="2">Option 3</option>
+                                                        <option value="3">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="container mt-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption1" value="option1" checked>
+                                                    <label class="form-check-label" for="radioOption1">
+                                                        Pilihan 1
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption2" value="option2">
+                                                    <label class="form-check-label" for="radioOption2">
+                                                        Pilihan 2
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="container mt-3">
+                                                
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption1" value="option1" checked>
+                                                    <label class="form-check-label" for="radioOption1">
+                                                        Pilihan 1
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption2" value="option2">
+                                                    <label class="form-check-label" for="radioOption2">
+                                                        Pilihan 2
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioOption3" value="option3">
+                                                    <label class="form-check-label" for="radioOption3">
+                                                        Pilihan 3
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="container mt-3">
+                                               
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="checkboxOption1" value="option1" checked>
+                                                    <label class="form-check-label" for="checkboxOption1">
+                                                        Pilihan 1
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="checkboxOption2" value="option2">
+                                                    <label class="form-check-label" for="checkboxOption2">
+                                                        Pilihan 2
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="checkboxOption3" value="option3">
+                                                    <label class="form-check-label" for="checkboxOption3">
+                                                        Pilihan 3
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="container mt-3">
+                                            
+                                                <div class="mb-3">
+                                                    <label for="fileInput" class="form-label">Pilih berkas</label>
+                                                    <input type="file" class="form-control" id="fileInput">
+                                                </div>
+                                            </div>
+                                            <div class="container mt-3 width-10%">
+                                                <textarea class="form-control custom-textarea" rows="4"></textarea>
+                                            </div>
+                                            <div class="container mt-3 width-30%">
+                                                <textarea class="form-control custom-textarea" rows="4"></textarea>
+                                            </div>
+                                            
+                                            <body>
+                                                <div class="container mt-5">
+                                                    
+                                                    <button class="btn custom-button save">Save</button>
+                                                    <button class="btn custom-button cancel">Cancel</button>
+                                                </div>
+                                                <div class="container mt-5"> 
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="inputWithTooltip" data-bs-toggle="tooltip" data-bs-placement="top" placeholder="input">
+                                                    </div>
+                                                </div>
+                                                <div class="container mt-5"> 
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="inputWithTooltip" data-bs-toggle="tooltip" data-bs-placement="top" placeholder="Try typing 'a' ">
+                                                    </div>
+                                                </div>
+                                                <div class="container mt-5">
+                                                    
+                                                
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="tagsInput" placeholder="Ketik dan tekan Enter untuk menambahkan tag">
+                                                    </div>
+                                                
+                                                    <div class="tag-list"></div>
+                                                </div>
+                                                <hr>
+      <!--Footer-->
+  
+      <div class="container" style="background-color: #231e18; margin: auto; position: relative; min-width: 100%;">
+        <div class="header">
+          <div class="row px-5" style="color: #ffff;">
+            <div class="text-center pb-3 pt-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="white" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="white" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="white" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 24 24"><path fill="white" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/></svg>
+            </div> 
+            <hr>
+            <div class="col-sm-3 pt-3">
+              <b>ALAMAT</b>
+              <p class="pt-2 fw-light">Jl. Sultan Iskandar Muda No.15B, Pondok Indah, Kebayoran Lama, Jakarta Selatan 12240</p>
+            </div>
+            <div class="col-sm-3 pt-3">
+              <b>INFORMASI PERUSAHAAN</b>
+              <p class="fw-light pt-2">Tentang Melodia
+                <br>Kontak
+               <br> Blog
+               <br> Artis
+               <br>Karir
+               <br> Pusat Bantuan
+               <br> Konfirmasi Pembayaran
+               <br> Syarat & Ketentuan.</p>
+            </div>
+            <div class="col-sm-3 pt-3">
+              <b>DEPARTEMEN</b>
+              <p class="fw-light pt-2">Baru Datang
+                <br>Amplifier & Monitor
+                <br>Gitar & Bass
+                <br>Keyboard & Piano
+                <br>Peralatan DJ
+                <br>Software & Recording</p>
+            </div>
+            <div class="col-sm-3 pt-3">
+              <b>PROGRAM MELODIA</b>
+              <p class="fw-light pt-2">Reseller
+               <br> Open Endorsement
+               <br> Melodia Customer Registration</p>
+               <div class="box pt-4 d-flex fw-light">
+                <form action="#">
+                  <div class="form-box br-5">
+                    <input type="text" name="EmailAddress" placeholder="Masukan Email Anda">
+                    <button type="submit" style="border-radius: 5px; background-color: #adc2c9;">Kirim</button>
+                  </div>
+                </form>
+               </div>
+               </div>
+               
+            </div>
+          </div>
+          <hr style="color: #ffff;">
+          <p class="text-center pb-3 px-5" style="color: #ffff;">COPYRIGHT © HARI HARI MUSIK 2023 | ALL RIGHTS RESERVED </p>
+        </div>
+      </div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+            
+      <script>
+          const tagsInput = document.getElementById('tagsInput');
+          const tagList = document.querySelector('.tag-list');
+      
+          tagsInput.addEventListener('keydown', function (event) {
+              if (event.key === 'Enter') {
+                  event.preventDefault();
+                  const tagValue = tagsInput.value.trim();
+                  if (tagValue) {
+                      createTag(tagValue);
+                      tagsInput.value = '';
+                  }
+              }
+          });
+      
+          function createTag(tagValue) {
+              const tag = document.createElement('span');
+              tag.className = 'badge bg-primary mx-1';
+              tag.textContent = tagValue;
+      
+              const removeButton = document.createElement('button');
+              removeButton.className = 'btn-close';
+              removeButton.addEventListener('click', function () {
+                  tag.remove();
+              });
+      
+              tag.appendChild(removeButton);
+              tagList.appendChild(tag);
+          }
+      </script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
